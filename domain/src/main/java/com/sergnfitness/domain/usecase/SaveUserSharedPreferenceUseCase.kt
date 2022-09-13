@@ -20,4 +20,9 @@ class SaveUserSharedPreferenceUseCase @Inject constructor(
         val result: Boolean = userRepository.saveDataStartDataCalendar(startData = startData, endData = endData)
         return result
     }
+
+    fun saveTheme(bool:Boolean):Boolean{
+        val result: Boolean = userRepository.saveTheme(bool)
+        return result
+    }
 }

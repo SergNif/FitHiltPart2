@@ -41,15 +41,12 @@
                 <TextView
                     android:id="@+id/house_button"
                     style="@style/fon_menu_house_up_button_part2"
+
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="70dp"
                     android:layout_marginTop="25dp"
-                    android:clickable="true"
-                    android:gravity="top"
-
-
-                    />
+                    android:layout_marginStart="30dp"
+                    android:clickable="true"/>
             </LinearLayout>
 
             <TextView

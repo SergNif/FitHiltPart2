@@ -43,7 +43,14 @@ class Part3Page1ProgrammRghtEatFragment : Fragment() {
         binding.houseButton.setOnClickListener{
             onClickHouse(view = view)
         }
-
+        if (AppCompatDelegate.getDefaultNightMode() == 2) {
+            binding.textDown.setTextColor(Color.WHITE)
+            binding.textUp.setTextColor(Color.WHITE)
+        }
+        if (AppCompatDelegate.getDefaultNightMode() == 1) {
+            binding.textDown.setTextColor(Color.BLACK)
+            binding.textUp.setTextColor(Color.BLACK)
+        }
         val htmlString : String  = "TextView first line... <br />" +
                 "<b>Bold Text</b> | <i>Italic Text</i> and <br/>" +
                 "<u>Underlined text</u>"
@@ -89,16 +96,7 @@ class Part3Page1ProgrammRghtEatFragment : Fragment() {
         binding.textDown.text = spanned
         binding.textUp.text = spanned1
 
-        if (AppCompatDelegate.getDefaultNightMode() == 2) {
-            binding.textDown.setTextColor(Color.WHITE)
-            binding.textUp.setTextColor(Color.WHITE)
 
-        }
-        if (AppCompatDelegate.getDefaultNightMode() == 1) {
-            binding.textDown.setTextColor(Color.BLACK)
-            binding.textUp.setTextColor(Color.BLACK)
-
-        }
 
     }
 

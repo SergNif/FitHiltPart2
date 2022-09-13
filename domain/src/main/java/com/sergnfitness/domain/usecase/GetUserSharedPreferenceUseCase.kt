@@ -12,4 +12,8 @@ class GetUserSharedPreferenceUseCase @Inject constructor(
         val user: User = userRepository.getUser()
         return user
     }
+
+    fun getTheme():Boolean{
+        return   userRepository.getTheme()
+    }
 }

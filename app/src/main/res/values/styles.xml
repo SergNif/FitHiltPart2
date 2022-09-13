@@ -80,8 +80,8 @@
 
 
     <style name="fon_menu_house_up_button_part2">
-        <item name="android:paddingStart">15sp</item>
-        <item name="android:paddingEnd">15sp</item>
+        <item name="android:paddingHorizontal">5dp</item>
+        <item name="android:paddingVertical">5dp</item>
         <item name="android:drawableLeft">@drawable/ic_house_1</item>
         <item name="android:layout_width">320dp</item>
         <item name="android:layout_height">34dp</item>

@@ -69,8 +69,14 @@ class Pg1MaleFemale : Fragment() {
 //        } else {
 //            setTheme(R.style.AppTheme)
 //        }
+        if (viewModel.getTheme()){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
         binding.switchtheme.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
+                viewModel.saveChangeTheme(true)
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 binding.text1.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
                 binding.text2.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
@@ -78,6 +84,7 @@ class Pg1MaleFemale : Fragment() {
 
                 Log.e(taG, "AppCompatDelegate  ${AppCompatDelegate.getDefaultNightMode()}")
             } else {
+                viewModel.saveChangeTheme(false)
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 Log.e(taG, "AppCompatDelegate else ${AppCompatDelegate.getDefaultNightMode()}")
                 binding.text1.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))

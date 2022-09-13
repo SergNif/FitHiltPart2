@@ -219,6 +219,16 @@ class UserRepositoryImpl @Inject constructor(
         return date85?.let { formatter25.format(it) }
     }
 
+    override fun saveTheme(bool: Boolean): Boolean {
+        val result = sharedPrefsInterfaceStorage.saveTheme(bool)
+        return result
+    }
+
+    override fun getTheme(): Boolean {
+        return sharedPrefsInterfaceStorage.getTheme()
+    }
+
+
 
     override fun saveDataStartDataCalendar(startData: String, endData: String): Boolean {
         val result = sharedPrefsInterfaceStorage.saveData(startData = startData, endData = endData)

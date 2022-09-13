@@ -26,6 +26,7 @@ private const val DEFAULT_FIRST_NAME = "Default first name"
 
 private const val KEY_STARTDATA = "Start Data name"
 private const val KEY_ENDDATA = "End Data name"
+private const val KEY_THEME = "Theme"
 
 
 //@Module
@@ -110,6 +111,15 @@ class SharedPrefsImplStorage @Inject constructor(context: Context) : SharedPrefs
         sharedPreferences.edit().putString(KEY_STARTDATA, startData).apply()
         sharedPreferences.edit().putString(KEY_ENDDATA, endData).apply()
         return true
+    }
+
+    override fun saveTheme(bool: Boolean): Boolean {
+        sharedPreferences.edit().putBoolean(KEY_THEME, bool).apply()
+        return true
+    }
+
+    override fun getTheme(): Boolean {
+     return  sharedPreferences.getBoolean(KEY_THEME, false) ?: false
     }
 
 }

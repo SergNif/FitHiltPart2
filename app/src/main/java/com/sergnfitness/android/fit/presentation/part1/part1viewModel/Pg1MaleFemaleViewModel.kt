@@ -50,6 +50,9 @@ class Pg1MaleFemaleViewModel @Inject constructor(
     private val _woman = MutableLiveData<Boolean>()
     val live_woman: LiveData<Boolean> = _woman
 
+    private val _dayTheme = MutableLiveData<Boolean>()
+    val live_dayTheme: LiveData<Boolean> = _dayTheme
+
     private val _state = MutableLiveData<CoinListState>()
     val state: LiveData<CoinListState> = _state
 
@@ -80,6 +83,16 @@ class Pg1MaleFemaleViewModel @Inject constructor(
         val result: Boolean = saveUserSharedPreferenceUseCase.execute(params)
 //        val result: Boolean = saveUserNameUseCase.execute(param = params)
         _resultLive.value = "Save $textv = $result"
+
+    }
+
+    fun saveChangeTheme(bool:Boolean){
+        _dayTheme.value = bool
+        val result : Boolean = saveUserSharedPreferenceUseCase.saveTheme(bool)
+    }
+
+    fun getTheme():Boolean{
+        return  getUserSharedPreferenceUseCase.getTheme()
 
     }
 
