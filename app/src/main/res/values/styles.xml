@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Light application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">#ffff</item>
+        <!--        Our app's background colour when light mode is on == white-->
+        <item name="text_color">#000</item>
+        <!--        Text color is black-->
+        <item name="button_color">@color/colorAccent</item>
+    </style>
+
+    <!-- dark application theme. -->
+    <style name="darkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">#191919</item>
+        <!--     Our app's background changes to black when dark mode is activated -->
+        <item name="text_color">#ffff</item>
+        <!--     text and button color change to white to contrast with the app's background-->
+        <item name="button_color">#ffff</item>
+    </style>
+
+
+    <style name="num_page2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ic_fon_number</item>
+        <item name="android:fontFamily">@font/ravie</item>
+        <item name="android:scaleX">1.3</item>
+
+
+<!--        <item name="android:textAlignment">viewEnd</item>-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+
+<!--        <item name="layout_constraintBottom_toBottomOf">parent</item>-->
+<!--        <item name="layout_constraintEnd_toEndOf">parent</item>-->
+<!--        <item name="layout_constraintHorizontal_bias">.06</item>-->
+        <item name="layout_constraintStart_toStartOf">parent</item>
+<!--        <item name="layout_constraintVertical_bias">0.06</item>-->
+    </style>
+
+    <style name="text_page2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:paddingTop">1dp</item>
+<!--        <item name="android:textColor">@color/color_text_page2_dark</item>-->
+        <item name="android:textSize">14sp</item>
+<!--        <item name="layout_constraintBottom_toBottomOf">parent</item>-->
+<!--        <item name="layout_constraintEnd_toEndOf">parent</item>-->
+<!--        <item name="layout_constraintHorizontal_bias">.01</item>-->
+<!--&lt;!&ndash;        <item name="layout_constraintStart_toEndOf">@id/num_text_princip_pitania</item>&ndash;&gt;-->
+<!--        <item name="layout_constraintVertical_bias">0.06</item>-->
+    </style>
+
+
+
+    <style name="password_eye_part2">
+
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <style name="fon_menu_house_up_button_part2">
+        <item name="android:paddingStart">15sp</item>
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:drawableLeft">@drawable/ic_house_1</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="fon_menu_note_up_button_part2">
+        <item name="android:paddingStart">15sp</item>
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:drawableLeft">@drawable/ic_icons_24_left_bar_calendar</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <style name="fon_menu_setting_up_button_part2">
+        <item name="android:paddingStart">15sp</item>
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:drawableLeft">@drawable/ic_icons_24_left_bar_settings</item>
+
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <style name="fon_menu_out_up_button_part2">
+        <item name="android:paddingStart">15sp</item>
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:drawableLeft">@drawable/ic_icons_24_left_bar_log_out</item>
+
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="fon_menu_button_part2">
+        <item name="android:paddingStart">2sp</item>
+        <item name="android:paddingEnd">2sp</item>
+        <item name="android:paddingVertical">1sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+<!--        <item name="android:drawableLeft">@drawable/ic_icons_16_calendar_vector</item>-->
+<!--        <item name="android:drawableRight">@drawable/ic_icons_24_left_bar_calendar</item>-->
+        <item name="android:layout_width">180sp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/ic_fon_menu_button_part2_page1_middle</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">15sp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+    </style>
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">106dp</item>
+    </style>
+
+    <style name="Datapicker" parent="Theme.AppCompat.Light" >
+<!--        <item name="colorAccent">#AACC34</item>-->
+<!--        &lt;!&ndash;selected Item color&ndash;&gt;-->
+<!--        <item name="colorControlActivated">#0AFF34</item>-->
+<!--        &lt;!&ndash; arrow bordercolor(<>)&ndash;&gt;-->
+<!--        <item name="android:selectableItemBackgroundBorderless">#000000</item>-->
+<!--        &lt;!&ndash; Highlight item color&ndash;&gt;-->
+<!--        <item name="colorControlHighlight">#5369E3</item>-->
+<!--        &lt;!&ndash;Calender Background color &ndash;&gt;-->
+<!--        <item name="android:windowBackground">@color/colorStatePressed</item>-->
+
+<!--        &lt;!&ndash; Ok Cancel Color&ndash;&gt;-->
+<!--        <item name="android:textColor">#00BCD4</item>-->
+
+<!--        &lt;!&ndash; Week TextColor&ndash;&gt;-->
+<!--        <item name="android:textColorSecondary">#CCDD22</item>-->
+<!--        &lt;!&ndash; Calender Number color arrow color (< >) &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">#000000</item>-->
+<!--        &lt;!&ndash;day , month&ndash;&gt;-->
+<!--        <item name="android:textColorPrimaryInverse">#000000</item>-->
+<!--        <item name="android:textColorPrimaryDisableOnly">#000000</item>-->
+<!--        &lt;!&ndash; year&ndash;&gt;-->
+<!--        <item name="android:textColorSecondaryInverse">#E62C2C</item>-->
+
+
+
+<!--        &lt;!&ndash;header background&ndash;&gt;-->
+        <item name="colorAccent">#80FED8D8</item>
+        <item name="android:textColorSecondaryInverse">#182155</item>
+        <item name="colorOnPrimary">#C5E0A6</item>
+        <item name="colorPrimary">#AD8AEB</item>
+        <item name="android:windowBackground">#D8EDD9</item>
+        <!--selected day-->
+        <item name="android:colorControlActivated">#7FAF80E3</item>
+        <item name="android:textColorPrimaryInverse">#2C3339</item>
+<!--        -->
+
+<!--&lt;!&ndash;        <item name="android:text">22sp</item>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        <item name="cornerFamily">cut</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;days of the month&ndash;&gt;-->
+        <item name="android:textColorPrimary">#2196F3</item>
+
+
+
+<!--&lt;!&ndash;        <item name="scaleFromTextSize">22sp</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;days of the week&ndash;&gt;-->
+<!--        <item name="android:textColorSecondary">#242D5F</item>-->
+<!--&lt;!&ndash;        <item name="android:textColorSecondary">#FAAFB2</item>&ndash;&gt;-->
+        <item name="android:headerBackground">#FF3365</item>
+        <item    name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="textInputStyle">@style/Widget.AppCompat.TextView</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="fon_menu_button_part2_sign_left">
+        <item name="android:paddingStart">2sp</item>
+        <item name="android:paddingEnd">2sp</item>
+        <item name="android:paddingVertical">1sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:drawableLeft">@drawable/ic_icons_16_calendar_vector</item>
+
+        <item name="android:layout_width">60sp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/ic_fon_menu_button_part2_page1_left</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">left</item>
+
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">15sp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+    <style name="fon_menu_button_part2_sign_Right">
+        <item name="android:paddingStart">2sp</item>
+        <item name="android:paddingEnd">2sp</item>
+        <item name="android:paddingVertical">1sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+
+        <item name="android:drawableRight">@drawable/ic_icons_24_left_bar_calendar</item>
+        <item name="android:layout_width">60sp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/ic_fon_menu_button_part2_page1_right</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">15sp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+
+    <style name="fon_menu_button_part2_to_user">
+        <item name="android:paddingStart">15sp</item>
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:paddingVertical">1sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+
+        <item name="android:background">@drawable/ic_fon_menu_button_part2_page1</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+    <style name="data_text_part2_page4">
+        <item name="android:paddingEnd">5sp</item>
+        <item name="android:paddingVertical">1sp</item>
+        <item name="android:layout_marginVertical">5sp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:drawableRight">@drawable/ic_icons_16_calendar_vector_right</item>
+        <item name="android:background">@drawable/ic_fon_text_page_4_no_press</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+    <style name="data_text_password_part2_page4">
+        <item name="android:paddingEnd">10sp</item>
+        <item name="android:layout_marginVertical">12sp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">34dp</item>
+
+        <item name="android:background">@drawable/ic_fon_text_page_4_no_press</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+
+    <style name="part2_page1_to_user">
+        <item name="android:paddingEnd">15sp</item>
+        <item name="android:layout_marginVertical">6sp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">35dp</item>
+
+        <item name="android:background">@drawable/ic_fon_part2_save_param</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+
+    <style name="text_data_page4">
+        <item name="android:layout_width">295dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/ic_fon_text_page_4_no_press</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical">1dp</item>
+        <item name="android:paddingHorizontal">1dp</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintVertical_bias">0.03</item>
+    </style>
+
+
+
+    <style name="text_data_page5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/ic_button_text_fon_page5</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical">1dp</item>
+        <item name="android:textColor">@color/text_grey_page4</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="up_grin_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/ic_fon_text_up</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/color_text_up_black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingVertical">2dp</item>
+    </style>
+
+    <style name="middle_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/bahianita</item>
+<!--        <item name="android:textColor">@color/text_grey_page4</item>-->
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingVertical">1dp</item>
+        <item name="android:layout_marginVertical">2sp</item>
+
+    </style>
+
+    <style name="text_style_programm_pitania">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">25sp</item>
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:paddingHorizontal">20sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#484A51</item>
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+</resources>

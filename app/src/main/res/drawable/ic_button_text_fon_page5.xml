@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <gradient android:startColor="#F5F5F5" android:endColor="#E4E4D7F0"  android:angle="-90.0"/>
+  <corners android:radius="10dp" />
+  <padding android:left="2dip" android:right="2dip" android:top="1dip" android:bottom="1dip"/>
+  <size android:width="145dip" android:height="20dip" />
+</shape>
+
+
+
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:width="145dp"-->
+<!--    android:height="34dp"-->
+<!--    android:viewportWidth="145"-->
+<!--    android:viewportHeight="34">-->
+<!--  <path-->
+<!--      android:pathData="M-0,17C-0,7.611 7.611,-0 17,-0L128,-0C137.389,-0 145,7.611 145,17C145,26.389 137.389,34 128,34L17,34C7.611,34 -0,26.389 -0,17Z"-->
+<!--      android:fillColor="#F5F5F5"/>-->
+<!--</vector>-->

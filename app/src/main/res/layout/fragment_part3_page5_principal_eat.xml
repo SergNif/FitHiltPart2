@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.part3.Part3Page5PrincipalEatFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lyn_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="120dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/logo_ego"
+                    android:layout_width="100dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginBottom="15sp"
+                    android:gravity="center"
+                    android:padding="0sp"
+
+                    android:src="@drawable/ic_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/house_button"
+                    style="@style/fon_menu_house_up_button_part2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="true"
+                    android:gravity="top"
+                    android:onClick="@{frag::onClickHouse}"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_enter_data_page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="ПРИНЦИПЫ ПП"
+                android:textAlignment="center"
+                android:textColor="@color/red_text"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyn_head"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/some_id"
+                style="@style/text_style_programm_pitania"
+                android:lineSpacingExtra="5sp"
+
+                android:translationY="-2.49sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_enter_data_page4" />
+
+
+            <ImageView
+                android:id="@+id/imageFirst"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:padding="0dp"
+
+                android:src="@drawable/part3page5first"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/some_id" />
+
+            <TextView
+                android:id="@+id/some_id2"
+                style="@style/text_style_programm_pitania"
+                android:lineSpacingExtra="5sp"
+
+                android:translationY="-2.49sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageFirst" />
+
+            <ImageView
+                android:id="@+id/imageTwo"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:padding="0dp"
+
+                android:src="@drawable/part3page5two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/some_id2" />
+
+
+            <TextView
+                android:id="@+id/some_id3"
+                style="@style/text_style_programm_pitania"
+                android:lineSpacingExtra="5sp"
+
+                android:translationY="-2.49sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageTwo" />
+
+
+            <TextView
+                android:id="@+id/text_food_need_page5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Продукты, которые \n должны быть в \nрационе ПП
+"
+                android:textAlignment="center"
+                android:textColor="@color/red_text"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/some_id3" />
+
+            <LinearLayout
+                android:id="@+id/lyn_image_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_food_need_page5">
+
+                <LinearLayout
+                    android:id="@+id/lyn_image_horiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/lyn_image_vert">
+
+
+                    <ImageView
+                        android:id="@+id/imageSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:src="@drawable/part3pagesecond"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/some_id3" />
+
+
+                    <ImageView
+                        android:id="@+id/imageThird"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleX="1.12"
+                        android:src="@drawable/part3page5third"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/some_id3" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageLast"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/part3pagelast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageThird" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

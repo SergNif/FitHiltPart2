@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.6088541666666667" />
+        <entry key="app/src/main/res/drawable/border_fon_rectangle.xml" value="0.2375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_double_arrow_24.xml" value="0.102" />
+        <entry key="app/src/main/res/drawable/ic_button_previos.xml" value="0.2145" />
+        <entry key="app/src/main/res/drawable/ic_button_text_fon_page5.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_button_text_fon_page5_no_press.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/ic_fon_chart_xy_header.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_fon_spinner.xml" value="0.337" />
+        <entry key="app/src/main/res/drawable/ic_house_1.xml" value="0.1925" />
+        <entry key="app/src/main/res/layout/activity_dictionary.xml" value="0.27708333333333335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5796875" />
+        <entry key="app/src/main/res/layout/content_dictionary.xml" value="0.5796875" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.5796875" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.356353591160221" />
+        <entry key="app/src/main/res/layout/fragment_menu_day2_part2.xml" value="0.3807291666666667" />
+        <entry key="app/src/main/res/layout/fragment_menu_day_part2.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_menu_day_part3.xml" value="0.3807291666666667" />
+        <entry key="app/src/main/res/layout/fragment_new_one_menu_day.xml" value="0.44814814814814813" />
+        <entry key="app/src/main/res/layout/fragment_page10_bad_habbits.xml" value="0.38779527559055116" />
+        <entry key="app/src/main/res/layout/fragment_page10_data2.xml" value="0.4537037037037037" />
+        <entry key="app/src/main/res/layout/fragment_page3_data2.xml" value="0.28489583333333335" />
+        <entry key="app/src/main/res/layout/fragment_page4_physical_active.xml" value="0.6088541666666667" />
+        <entry key="app/src/main/res/layout/fragment_page5_souce_protein.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/layout/fragment_page6_source_fiber.xml" value="0.3500897666068223" />
+        <entry key="app/src/main/res/layout/fragment_page7_foods.xml" value="0.3995943204868154" />
+        <entry key="app/src/main/res/layout/fragment_page8_water_drink.xml" value="0.334855403348554" />
+        <entry key="app/src/main/res/layout/fragment_page9_typical_day.xml" value="0.38779527559055116" />
+        <entry key="app/src/main/res/layout/fragment_part2_fragment1_to_user.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/fragment_part2_page1.xml" value="0.38011695906432746" />
+        <entry key="app/src/main/res/layout/fragment_part2_page2_programm_rght_eat.xml" value="0.325" />
+        <entry key="app/src/main/res/layout/fragment_part2_page3.xml" value="0.4578125" />
+        <entry key="app/src/main/res/layout/fragment_part2_page4.xml" value="0.4578125" />
+        <entry key="app/src/main/res/layout/fragment_part2_page5.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/fragment_part2_page7.xml" value="0.4578125" />
+        <entry key="app/src/main/res/layout/fragment_part2_page8.xml" value="0.537962962962963" />
+        <entry key="app/src/main/res/layout/fragment_part3_page1_programm_rght_eat.xml" value="0.3363774733637747" />
+        <entry key="app/src/main/res/layout/fragment_part3_page2_menu_week.xml" value="0.4052795031055901" />
+        <entry key="app/src/main/res/layout/fragment_part3_page3_meal_regimen.xml" value="0.4898148148148148" />
+        <entry key="app/src/main/res/layout/fragment_part3_page4_physical_activity.xml" value="0.35648148148148145" />
+        <entry key="app/src/main/res/layout/fragment_part3_page5_principal_eat.xml" value="0.3536184210526316" />
+        <entry key="app/src/main/res/layout/fragment_part3_page6_mistake.xml" value="0.3536184210526316" />
+        <entry key="app/src/main/res/layout/fragment_pg10_bad_habbits.xml" value="0.3059006211180124" />
+        <entry key="app/src/main/res/layout/fragment_pg4_physical_active.xml" value="0.5046583850931677" />
+        <entry key="app/src/main/res/layout/fragment_pg5_source_protein.xml" value="0.34627329192546585" />
+        <entry key="app/src/main/res/layout/fragment_pg6_source_fiber.xml" value="0.3027950310559006" />
+        <entry key="app/src/main/res/layout/fragment_pg7_foods.xml" value="0.24242424242424243" />
+        <entry key="app/src/main/res/layout/fragment_pg8_water_drink.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_pg9_typical_day.xml" value="0.3146964856230032" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.5796875" />
+        <entry key="app/src/main/res/layout/pg1_fragment_ma_female1.xml" value="0.23799582463465555" />
+        <entry key="app/src/main/res/layout/pg2_next.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/pg3_data_age_hight_weight.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/plus_next_day_menu_next.xml" value="0.5960163432073544" />
+        <entry key="app/src/main/res/layout/recycler_row_list.xml" value="0.510670731707317" />
+        <entry key="app/src/main/res/layout/spinner_adapter.xml" value="0.5953703703703703" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

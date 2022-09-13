@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marg_horiz_35">35dp</dimen>
+    <dimen name="width_frame_logo">320dp</dimen>
+    <dimen name="hight_frame_logo">70dp</dimen>
+    <dimen name="width_green_btn_up">201dp</dimen>
+    <dimen name="hight_green_btn_up">29.85dp</dimen>
+    <dimen name="width_enter_data">318dp</dimen>
+    <dimen name="hight_enter_data">70dp</dimen>
+    <dimen name="hight_40dp">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

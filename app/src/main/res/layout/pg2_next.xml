@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".presentation.part1.Pg2NextFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/lin_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+
+            android:text="Мы расскажем тебе:"
+            style="@style/up_grin_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pic_page2_image"
+        android:layout_width="287dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="5dp"
+
+        android:src="@drawable/pict_page_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_lay1" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_text_princip_pitania"
+        style="@style/num_page2"
+        android:text="1"
+        app:layout_constraintTop_toBottomOf="@id/pic_page2_image"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_princip_pitania"
+        style="@style/text_page2"
+        android:text="Принципы правильного питания"
+        app:layout_constraintTop_toTopOf="@+id/num_text_princip_pitania"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/num_text_list_product"
+        style="@style/num_page2"
+        android:text="2"
+        app:layout_constraintTop_toBottomOf="@id/num_text_princip_pitania"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_list_product"
+        style="@style/text_page2"
+        android:text="Список продуктов для п/п"
+        app:layout_constraintStart_toEndOf="@+id/num_text_list_product"
+        app:layout_constraintTop_toTopOf="@id/num_text_list_product"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_text_list_product_cancel"
+        style="@style/num_page2"
+        android:text="3"
+        app:layout_constraintTop_toBottomOf="@id/num_text_list_product"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_list_product_cancel"
+        style="@style/text_page2"
+        android:text="От каких продуктов следует отказаться"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_list_product_cancel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_text_help_organizm"
+        style="@style/num_page2"
+        android:text="4"
+        app:layout_constraintTop_toBottomOf="@id/num_text_list_product_cancel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_help_organizm"
+        style="@style/text_page2"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        android:text="Помощь организму при переходе на п/п"
+        app:layout_constraintTop_toTopOf="@id/num_text_help_organizm"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_text_start_go"
+        style="@style/num_page2"
+        android:text="5"
+        app:layout_constraintTop_toBottomOf="@id/num_text_help_organizm"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_start_go"
+        style="@style/text_page2"
+        android:text="С чего начать переход на п/п"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_start_go"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_text_individual_menu"
+        style="@style/num_page2"
+        android:text="6"
+        app:layout_constraintTop_toBottomOf="@id/num_text_start_go"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_individual_menu"
+        style="@style/text_page2"
+        android:text="Составление индивидуального меню"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_individual_menu"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="238dp"
+        android:layout_height="@dimen/hight_40dp"
+        android:layout_marginBottom="60sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/text_back"
+            android:layout_width="@dimen/hight_40dp"
+            android:layout_height="@dimen/hight_40dp"
+            android:backgroundTint="@color/bar_menu_navigation_fon_violet"
+            android:background="@drawable/ic_button_previos" />
+
+        <TextView
+            android:id="@+id/text_next"
+            android:layout_width="159dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="40dp"
+
+            android:layout_marginTop="10sp"
+            android:background="@drawable/ic_button_next"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:paddingTop="2dp"
+            android:text="ПРОДОЛЖИТЬ"
+            android:textAlignment="center"
+            android:textColor="@color/color_text_up_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_footer_image"
+        android:layout_width="318dp"
+        android:layout_height="@dimen/hight_40dp"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/footer_image"
+            android:layout_width="318dp"
+            android:layout_height="@dimen/hight_40dp"
+
+
+            android:background="@drawable/footer_image" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

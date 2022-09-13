@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.part2.MenuDayPart2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/lin_lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            app:layout_constraintEnd_toEndOf="@id/part2page1_button_history_weight"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/house_button"
+                style="@style/fon_menu_house_up_button_part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/note_button"
+                style="@style/fon_menu_note_up_button_part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/setting_button"
+                style="@style/fon_menu_setting_up_button_part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/exit_button"
+                style="@style/fon_menu_out_up_button_part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="@id/parametrs"
+            app:layout_constraintTop_toBottomOf="@+id/lin_lay1">
+
+            <LinearLayout
+                android:id="@+id/info_data_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="@id/parametrs"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay1">
+
+                <TextView
+                    android:id="@+id/text_all_right_part2_page1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:textAlignment="center"
+                    android:paddingBottom="2dp"
+                    android:text="У тебя все получится!"
+
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/parametrs"
+                    app:layout_constraintStart_toStartOf="@+id/info_user"
+                    app:layout_constraintTop_toBottomOf="@id/text_name_user_part2_page1" />
+
+                <TextView
+                    android:id="@+id/text_data_right_part2_page1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:textAlignment="center"
+                    android:paddingBottom="3dp"
+
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/parametrs"
+                    app:layout_constraintStart_toStartOf="@+id/info_user"
+                    app:layout_constraintTop_toBottomOf="@id/text_name_user_part2_page1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_name_user_part2_page1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textAlignment="center"
+                android:text="ФИЗИЧЕСКАЯ АКТИВНОСТЬ"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/text_id_part2_page1"
+                app:layout_constraintStart_toStartOf="@+id/info_user"
+                app:layout_constraintTop_toBottomOf="@+id/lin_lay1" />
+
+            <TextView
+                android:id="@+id/text_id_part2_page1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                android:paddingBottom="4dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/parametrs"
+                app:layout_constraintStart_toStartOf="@+id/info_user"
+                app:layout_constraintTop_toBottomOf="@id/text_name_user_part2_page1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parametrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            app:layout_constraintEnd_toEndOf="@+id/part2page1_button_history_weight"
+            app:layout_constraintStart_toStartOf="@+id/part2page1_button_history_weight"
+            app:layout_constraintTop_toBottomOf="@+id/info_user">
+
+            <TextView
+                android:id="@+id/part2page1_button_height"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_40dp"
+                android:background="@drawable/ic_fon_parametrs"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingHorizontal="6sp"
+android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/part2page1_button_history_weight" />
+
+            <TextView
+                android:id="@+id/part2page1_button_age"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_40dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/ic_fon_parametrs"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingHorizontal="6sp"
+
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/part2page1_button_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_40dp"
+                android:background="@drawable/ic_fon_parametrs"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingHorizontal="6sp"
+
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/part2page1_button_history_weight" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/part2page1_button_history_weight"
+            style="@style/fon_menu_button_part2"
+            android:clickable="true"
+            android:text="История изменения веса"
+            app:layout_constraintTop_toBottomOf="@+id/parametrs"
+            tools:ignore="MissingConstraints"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/lin_footer_image"
+            android:layout_width="@dimen/width_enter_data"
+            android:layout_height="@dimen/hight_40dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <ImageButton
+                android:id="@+id/footer_image"
+                android:layout_width="@dimen/width_enter_data"
+                android:layout_height="@dimen/hight_40dp"
+                android:background="@drawable/footer_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_recycl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="3dp"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/lin_footer_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/part2page1_button_history_weight">
+
+            <LinearLayout
+                android:id="@+id/lin_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingHorizontal="15sp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/lin_footer_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lin_recycl">
+
+
+                <ImageView
+                    android:id="@+id/plus_next_day_menu_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:rotation="-90"
+                    android:scaleX="2"
+                    android:scaleY="2"
+
+                    android:src="@drawable/ic_arrow_next" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25sp"
+                    android:layout_marginVertical="4dp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/open_sans"
+                    android:lineSpacingExtra="20dp"
+                    android:gravity="center"
+                    android:text="Блокнот"
+
+
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/plus_next_day_menu_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/plus_next_day_menu_next"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8sp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+
+                    android:rotation="90"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@drawable/ic_arrow_next" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="155"
+                app:layoutManager="LinearLayoutManager" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/plus_one_day_menu"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+
+
+            android:layout_margin="20sp"
+            android:clickable="true"
+            android:scaleX="1.35"
+            android:scaleY="1.35"
+            app:layout_constraintBottom_toTopOf="@id/lin_footer_image"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/sign_add" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

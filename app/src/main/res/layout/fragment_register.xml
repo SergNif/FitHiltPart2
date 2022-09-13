@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_horizontal_margin"
+    android:paddingTop="@dimen/fragment_vertical_margin"
+    android:paddingRight="@dimen/fragment_horizontal_margin"
+    android:paddingBottom="@dimen/fragment_vertical_margin"
+    android:background="@drawable/phone"
+    tools:context=".presentation.login.RegisterFragment">
+
+
+    <ImageView
+        android:id="@+id/footer_login"
+        android:layout_width="307dp"
+        android:layout_height="231dp"
+
+        android:layout_margin="30sp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintTop_toBottomOf="@+id/to_login"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/footer" />
+
+
+    <ImageView
+        android:id="@+id/logo_ego"
+        android:layout_width="218dp"
+        android:layout_height="192dp"
+        android:padding="30sp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullName"
+
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:autofillHints="Email"
+        android:background="@drawable/ic_enterdatalogin"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:hint="Имя"
+        android:padding="2dp"
+        android:textColor="@color/color_text_login_grey"
+        android:textColorHint="@color/color_text_login_grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_ego"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="25dp"
+        android:autofillHints="Email"
+        android:background="@drawable/ic_enterdatalogin"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="2dp"
+        android:textColor="@color/color_text_login_grey"
+        android:textColorHint="@color/color_text_login_grey"
+
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullName"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="25dp"
+        android:autofillHints="Email"
+        android:background="@drawable/ic_enterdatalogin"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:padding="2dp"
+        android:textColor="@color/color_text_login_grey"
+        android:textColorHint="@color/color_text_login_grey"
+
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/registerBtn"
+        android:layout_width="314dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/ic_button_text_fon_page5"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:padding="2dp"
+        android:text="@string/create_new_acc"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/to_login"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/no_account_to_reg"
+        android:textAlignment="center"
+        android:textColor="@color/color_text_login_grey"
+        android:textColorHint="@color/color_text_login_grey"
+
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/registerBtn"
+        app:layout_constraintStart_toStartOf="@id/registerBtn"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

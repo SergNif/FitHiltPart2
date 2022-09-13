@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#FFBB86FC</color>
+    <color name="colorPrimaryDark">#FF6200EE</color>
+    <color name="colorAccent">#FF3700B3</color>
+
+
+
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+
+
+    <color name="colorStateEnabled">#558B2F</color>
+    <color name="bar_menu_navigation_fon_green">#6CA146</color>
+    <color name="bar_menu_navigation_fon_violet">#FFBB86FC</color>
+    <color name="colorStatePressed">#EC0E0E</color>
+    <color name="colorStateNotEnabled">#755BA3</color>
+    <color name="color_fragment1">#8DEA22</color>
+    <color name="color_fragment2">#EAB825</color>
+    <color name="color_green_fon">#BCF0C1</color>
+    <color name="color_green_yellow">#FFECB2</color>
+    <color name="color_violet_fon">#ECBEF8</color>
+    <color name="color_page_data_fon_white">#FAF6F6</color>
+    <color name="color_text_login_grey">#6C7B9E</color>
+    <color name="color_text_page2_dark">#4F575E</color>
+    <color name="color_text_up_black">#303436</color>
+    <color name="red_text">#ED8AAD</color>
+    <color name="grey_dark_picture">#4A4A4A</color>
+    <color name="text_grey_page4">#4F575E</color>
+
+
+</resources>
