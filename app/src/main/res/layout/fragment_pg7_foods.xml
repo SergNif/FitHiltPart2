@@ -40,7 +40,7 @@
 
                 android:text="Полезно - значит вкусно"
                 style="@style/up_grin_text"
-                android:textSize="14sp"
+
                 />
         </LinearLayout>
 

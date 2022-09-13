@@ -370,11 +370,13 @@
         <item name="android:layout_marginHorizontal">15dp</item>
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:paddingHorizontal">2dp</item>
+
         <item name="android:background">@drawable/ic_fon_text_up</item>
         <item name="android:fontFamily">@font/roboto_condensed_regular</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/color_text_up_black</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:paddingTop">2dp</item>
         <item name="android:paddingVertical">2dp</item>

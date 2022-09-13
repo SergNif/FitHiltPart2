@@ -37,8 +37,7 @@
             <TextView
                 android:text="Необходимо пить 1,5л воды"
                 style="@style/up_grin_text"
-                android:textSize="14sp"
-                android:padding="2sp"
+
                 />
         </LinearLayout>
 

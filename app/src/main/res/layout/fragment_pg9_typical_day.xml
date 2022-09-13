@@ -35,8 +35,6 @@
             <TextView
                 android:text="Будь лучше каждый день"
                 style="@style/up_grin_text"
-                android:textSize="15sp"
-                android:paddingHorizontal="2sp"
                 />
         </LinearLayout>
 

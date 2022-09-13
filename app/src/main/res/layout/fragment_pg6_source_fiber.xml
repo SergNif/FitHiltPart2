@@ -37,7 +37,7 @@
 
                 android:text="Клетчатка Вам в помощь"
                 style="@style/up_grin_text"
-                android:textSize="14sp"
+
                 />
         </LinearLayout>
 

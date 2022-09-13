@@ -34,7 +34,7 @@
             <TextView
                 style="@style/up_grin_text"
                 android:text="Раскачай свой метаболизм!"
-                android:textSize="14sp"
+
                 />
         </LinearLayout>
 
