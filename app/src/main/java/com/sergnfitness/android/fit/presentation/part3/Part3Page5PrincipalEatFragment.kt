@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -79,15 +80,11 @@ class Part3Page5PrincipalEatFragment : Fragment() {
             binding.someId3.setTextColor(Color.WHITE)
         }
         if (AppCompatDelegate.getDefaultNightMode() == 1) {
-            binding.someId.setTextColor(Color.BLACK)
-            binding.someId2.setTextColor(Color.BLACK)
-            binding.someId3.setTextColor(Color.BLACK)
+            binding.someId.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_dark_dark_picture))
+            binding.someId2.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_dark_dark_picture))
+            binding.someId3.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_dark_dark_picture))
         }
-        if (AppCompatDelegate.getDefaultNightMode() == 1) {
-            binding.someId.setTextColor(Color.BLACK)
-            binding.someId2.setTextColor(Color.BLACK)
-            binding.someId3.setTextColor(Color.BLACK)
-        }
+
 
         binding.houseButton.setOnClickListener {
             onClickHouse()

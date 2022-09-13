@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -99,7 +100,9 @@ class Part3Page2MenuWeekFragment : Fragment() {
 
         }
         if (AppCompatDelegate.getDefaultNightMode() == 1) {
-            binding.someId.setTextColor(Color.BLACK)
+            binding.someId.setTextColor(ContextCompat.getColor(requireContext(), R.color.grey_dark_dark_picture))
+
+
 
         }
 
