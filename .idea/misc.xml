@@ -5,13 +5,17 @@
       <map>
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.6088541666666667" />
         <entry key="app/src/main/res/drawable/border_fon_rectangle.xml" value="0.2375" />
+        <entry key="app/src/main/res/drawable/ic_bar_menu1.xml" value="0.2915" />
         <entry key="app/src/main/res/drawable/ic_baseline_double_arrow_24.xml" value="0.102" />
         <entry key="app/src/main/res/drawable/ic_button_previos.xml" value="0.2145" />
         <entry key="app/src/main/res/drawable/ic_button_text_fon_page5.xml" value="0.265" />
         <entry key="app/src/main/res/drawable/ic_button_text_fon_page5_no_press.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/ic_fon_chart_xy_header.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_fon_number.xml" value="0.357" />
         <entry key="app/src/main/res/drawable/ic_fon_spinner.xml" value="0.337" />
         <entry key="app/src/main/res/drawable/ic_house_1.xml" value="0.1925" />
+        <entry key="app/src/main/res/drawable/ic_psign_ego.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/launcher_mm.xml" value="0.2915" />
         <entry key="app/src/main/res/layout/activity_dictionary.xml" value="0.27708333333333335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5796875" />
         <entry key="app/src/main/res/layout/content_dictionary.xml" value="0.5796875" />
