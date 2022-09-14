@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.6088541666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.271" />
         <entry key="app/src/main/res/drawable/border_fon_rectangle.xml" value="0.2375" />
         <entry key="app/src/main/res/drawable/ic_bar_menu1.xml" value="0.2915" />
         <entry key="app/src/main/res/drawable/ic_baseline_double_arrow_24.xml" value="0.102" />
@@ -14,6 +15,10 @@
         <entry key="app/src/main/res/drawable/ic_fon_number.xml" value="0.357" />
         <entry key="app/src/main/res/drawable/ic_fon_spinner.xml" value="0.337" />
         <entry key="app/src/main/res/drawable/ic_house_1.xml" value="0.1925" />
+        <entry key="app/src/main/res/drawable/ic_launcher_fitness_foreground.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_logo_ego.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/ic_male_female_button.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/ic_male_female_button_not_press.xml" value="0.271" />
         <entry key="app/src/main/res/drawable/ic_psign_ego.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/launcher_mm.xml" value="0.2915" />
         <entry key="app/src/main/res/layout/activity_dictionary.xml" value="0.27708333333333335" />
@@ -63,6 +68,7 @@
         <entry key="app/src/main/res/layout/plus_next_day_menu_next.xml" value="0.5960163432073544" />
         <entry key="app/src/main/res/layout/recycler_row_list.xml" value="0.510670731707317" />
         <entry key="app/src/main/res/layout/spinner_adapter.xml" value="0.5953703703703703" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_fit.xml" value="0.271" />
       </map>
     </option>
   </component>
