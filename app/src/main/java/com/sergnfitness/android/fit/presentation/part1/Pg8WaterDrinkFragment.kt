@@ -47,6 +47,11 @@ class Pg8WaterDrinkFragment : Fragment() {
 
         viewModel.initLive()
 
+        binding.page8ButtonWaterWithoutGas.isChecked = viewModel.dataUser.waterWithoutGas
+        binding.page8ButtonWaterShugar.isChecked = viewModel.dataUser.waterSugarGas
+        binding.page8ButtonMoreCofee.isChecked = viewModel.dataUser.coffee
+        binding.page8ButtonOnlyTea.isChecked = viewModel.dataUser.tea
+
         with(binding) {
             page8ButtonWaterWithoutGas.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {

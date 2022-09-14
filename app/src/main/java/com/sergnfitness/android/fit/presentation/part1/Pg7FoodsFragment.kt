@@ -55,6 +55,13 @@ class Pg7FoodsFragment : Fragment() {
 //        textPage6Kefir
 //        textPage6Yogurt
 
+        binding.textPage6Egg.isChecked = viewModel.dataUser.egg
+        binding.textPage6Chees.isChecked = viewModel.dataUser.cheese
+        binding.textPage6Nut.isChecked = viewModel.dataUser.nuts
+        binding.textPage6CottageCheese.isChecked = viewModel.dataUser.cottage
+        binding.textPage6Kefir.isChecked = viewModel.dataUser.kefir
+        binding.textPage6Yogurt.isChecked = viewModel.dataUser.yogurt
+
         with(binding) {
             textPage6Egg.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {

@@ -81,20 +81,18 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="5dp">
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/text_page5_chiken"
                     android:text="Курица"
-                    android:textOn="Курица"
-                    android:textOff="Курица"
+
 
                     style="@style/text_data_page5"
                     />
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/text_page5_turkey"
                     android:text="Индейка"
-                    android:textOn="Индейка"
-                    android:textOff="Индейка"
+
 
                     style="@style/text_data_page5"
                     />
@@ -106,20 +104,18 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="5dp">
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/page5_button_pork"
                     android:text="Свинина"
-                    android:textOn="Свинина"
-                    android:textOff="Свинина"
+
 
                     style="@style/text_data_page5"
                     />
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/page5_beef"
                     android:text="Говядина"
-                    android:textOn="Говядина"
-                    android:textOff="Говядина"
+
 
                     style="@style/text_data_page5"
                     />
@@ -131,19 +127,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginVertical="5dp">
-                <ToggleButton
+                <TextView
                     android:id="@+id/page5_button_fish"
                     android:text="Рыба"
-                    android:textOn="Рыба"
-                    android:textOff="Рыба"
+
 
                     style="@style/text_data_page5"
                     />
-                <ToggleButton
+                <TextView
                     android:id="@+id/page5_seafood"
                     android:text="Морепродукты"
-                    android:textOn="Морепродукты"
-                    android:textOff="Морепродукты"
+
 
                     style="@style/text_data_page5"
                     />
@@ -156,20 +150,18 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="5dp">
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/page5_button_without_meat"
                     android:text="Без мяса"
-                    android:textOn="Без мяса"
-                    android:textOff="Без мяса"
+
 
                     style="@style/text_data_page5"
                     />
 
-                <ToggleButton
+                <TextView
                     android:id="@+id/text_page5_without_fish"
                     android:text="Без рыбы"
-                    android:textOn="Без рыбы"
-                    android:textOff="Без рыбы"
+
 
                     style="@style/text_data_page5"
                     />

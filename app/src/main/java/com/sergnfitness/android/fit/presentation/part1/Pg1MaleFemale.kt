@@ -74,6 +74,7 @@ class Pg1MaleFemale : Fragment() {
         }else{
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
+        binding.switchtheme.isChecked = viewModel.getTheme()
         binding.switchtheme.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 viewModel.saveChangeTheme(true)

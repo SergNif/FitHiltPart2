@@ -48,6 +48,15 @@ class Pg6SourceFiberFragment : Fragment() {
 
         viewModel.initLive()
 
+        binding.textPage6Zukini.isChecked = viewModel.dataUser.zucchini
+        binding.textPage6Tomato.isChecked = viewModel.dataUser.tomato
+        binding.textPage6Baklagan.isChecked = viewModel.dataUser.eggplant
+        binding.textPage6ColorCabbage.isChecked = viewModel.dataUser.cauliflower
+        binding.textPage6Ogurz.isChecked = viewModel.dataUser.cucumbers
+        binding.textPage6Broccoli.isChecked = viewModel.dataUser.broccoli
+        binding.textPage6Avocado.isChecked = viewModel.dataUser.avocado
+        binding.textPage6ButtonMuhroms.isChecked = viewModel.dataUser.mushrooms
+
         with(binding) {
             textPage6Zukini.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {

@@ -49,61 +49,29 @@ class Pg5SourceProteinFragment : Fragment() {
         viewModel.initLive()
 
         with(binding){
-            textPage5Chiken.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeChiken(true)
-                }else{
-                    viewModel.changeChiken(false)
-                }
+            textPage5Chiken.setOnClickListener{
+                    viewModel.changeChiken()
             }
-            textPage5Turkey.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeTurkey(true)
-                }else{
-                    viewModel.changeTurkey(false)
-                }
+            textPage5Turkey.setOnClickListener{
+                    viewModel.changeTurkey()
             }
-            page5ButtonPork.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changePork(true)
-                }else{
-                    viewModel.changePork(false)
-                }
+            page5ButtonPork.setOnClickListener{
+                    viewModel.changePork()
             }
-            page5Beef.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeBeef(true)
-                }else{
-                    viewModel.changeBeef(false)
-                }
+            page5Beef.setOnClickListener{
+                    viewModel.changeBeef()
             }
-            page5ButtonFish.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeFish(true)
-                }else{
-                    viewModel.changeFish(false)
-                }
+            page5ButtonFish.setOnClickListener{
+                    viewModel.changeFish()
             }
-            page5Seafood.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeSeafood(true)
-                }else{
-                    viewModel.changeSeafood(false)
-                }
+            page5Seafood.setOnClickListener{
+                    viewModel.changeSeafood()
             }
-            page5ButtonWithoutMeat.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeWithoutMeat(true)
-                }else{
-                    viewModel.changeWithoutMeat(false)
-                }
+            page5ButtonWithoutMeat.setOnClickListener{
+                    viewModel.changeWithoutMeat()
             }
-            textPage5WithoutFish.setOnCheckedChangeListener{_, isChecked->
-                if (isChecked){
-                    viewModel.changeWithoutFish(true)
-                }else{
-                    viewModel.changeWithoutFish(false)
-                }
+            textPage5WithoutFish.setOnClickListener{
+                    viewModel.changeWithoutFish()
             }
         }
 

@@ -1,5 +1,6 @@
 package com.sergnfitness.android.fit.presentation.part1.part1viewModel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,7 +14,7 @@ class Pg5SourceProteinViewModel @Inject constructor() : ViewModel() {
     var userClass: User = User()
 
     var dataUser: DataUser = DataUser()
-    val TAG = "Pg5SourceProteinViewModel"
+    val taG = "Pg5SourceProteinViewModel"
 
     private var _text_page5_chiken = MutableLiveData<Boolean>(false)
     val live_text_page5_chiken: LiveData<Boolean> = _text_page5_chiken
@@ -39,8 +40,10 @@ class Pg5SourceProteinViewModel @Inject constructor() : ViewModel() {
     private var _text_page5_without_fish = MutableLiveData<Boolean>(false)
     val live_text_page5_without_fish: LiveData<Boolean> = _text_page5_without_fish
 
-    private var withoutMeat: Boolean = false
-    private var withoutFish: Boolean = false
+//    private var withoutMeat: Boolean = false
+//    private var withoutFish: Boolean = false
+    private var withoutMeat = _page5_button_without_meat.value
+    private var withoutFish = _text_page5_without_fish.value
 
     //    text_page5_without_fish
 //    page5_button_without_meat
@@ -61,53 +64,71 @@ class Pg5SourceProteinViewModel @Inject constructor() : ViewModel() {
         _text_page5_without_fish.value = dataUser.withoutFish
     }
 
-    fun changeChiken(bool: Boolean) {
-        if (!withoutMeat) {
-            _text_page5_chiken.value = bool
-            dataUser.chicken = bool
+    fun changeChiken() {
+        _text_page5_chiken.value.let { _text_page5_chiken.value = !(it)!! }
+        if (_page5_button_without_meat.value == false) {
+            dataUser.chicken = !dataUser.chicken
+        }else{
+            _text_page5_chiken.value.let {_text_page5_chiken.value = false}
+            dataUser.chicken = false
         }
     }
 
-    fun changeTurkey(bool: Boolean) {
-        if (!withoutMeat) {
-            _text_page5_turkey.value = bool
-            dataUser.tyrkey = bool
+    fun changeTurkey() {
+        _text_page5_turkey.value.let {_text_page5_turkey.value = !(it)!!}
+        if (_page5_button_without_meat.value == false) {
+            dataUser.tyrkey = !dataUser.tyrkey
+        }else{
+            _text_page5_turkey.value.let {_text_page5_turkey.value = false}
+            dataUser.tyrkey = false
         }
     }
 
-    fun changePork(bool: Boolean) {
-        if (!withoutMeat) {
-            _page5_button_pork.value = bool
-            dataUser.pork = bool
+    fun changePork() {
+        _page5_button_pork.value.let {_page5_button_pork.value = !(it)!!}
+        if (_page5_button_without_meat.value == false) {
+            dataUser.pork = !dataUser.pork
+        }else{
+            _page5_button_pork.value.let {_page5_button_pork.value = false}
+            dataUser.pork = false
         }
     }
 
-    fun changeBeef(bool: Boolean) {
-        if (!withoutMeat) {
-            _page5_beef.value = bool
-            dataUser.meat = bool
+    fun changeBeef() {
+        _page5_beef.value.let {_page5_beef.value = !(it)!!}
+        if (_page5_button_without_meat.value == false) {
+            dataUser.meat = !dataUser.meat
+        }else{
+            _page5_beef.value.let {_page5_beef.value = false}
+            dataUser.meat = false
         }
     }
 
-    fun changeFish(bool: Boolean) {
-        if (!withoutFish) {
-            _page5_button_fish.value = bool
-            dataUser.fish = bool
+    fun changeFish() {
+        _page5_button_fish.value.let {_page5_button_fish.value = !(it)!!}
+        if (_text_page5_without_fish.value == false) {
+            dataUser.fish = !dataUser.fish
+        }else{
+            _page5_button_fish.value.let {_page5_button_fish.value = false}
+            dataUser.fish = false
         }
     }
 
-    fun changeSeafood(bool: Boolean) {
-        if (!withoutFish) {
-            _page5_seafood.value = bool
-            dataUser.seaFood = bool
+    fun changeSeafood() {
+        _page5_seafood.value.let {_page5_seafood.value = !(it)!!}
+        if (_text_page5_without_fish.value == false) {
+            dataUser.fish = !dataUser.fish
+        }else{
+            _page5_seafood.value.let {_page5_seafood.value = false}
+            dataUser.fish = false
         }
     }
 
-    fun changeWithoutMeat(bool: Boolean) {
-        withoutMeat = bool
-        _page5_button_without_meat.value = bool
-        dataUser.withoutMeat = bool
-        if (bool) {
+    fun changeWithoutMeat() {
+
+        _page5_button_without_meat.value.let {_page5_button_without_meat.value = !(it)!!}
+        dataUser.withoutMeat.let { dataUser.withoutMeat = !(it)}
+        if (_page5_button_without_meat.value == true) {
             _text_page5_chiken.value = false
             _text_page5_turkey.value = false
             _page5_button_pork.value = false
@@ -120,17 +141,16 @@ class Pg5SourceProteinViewModel @Inject constructor() : ViewModel() {
         }
     }
 
-    fun changeWithoutFish(bool: Boolean) {
-        withoutFish = bool
-        _text_page5_without_fish.value = bool
-        dataUser.withoutFish = bool
-        if (bool) {
+    fun changeWithoutFish() {
+        _text_page5_without_fish.value.let {_text_page5_without_fish.value = !(it)!!}
+        dataUser.withoutFish.let { dataUser.withoutFish = !(it)}
+        if (_text_page5_without_fish.value == true) {
             _page5_button_fish.value = false
             _page5_seafood.value = false
             dataUser.fish = false
             dataUser.seaFood = false
 //            dataUser.withoutMeat = false
-//            dataUser.withoutFish = false
+
         }
     }
 

@@ -48,6 +48,11 @@ class Pg9TypicalDayFragment : Fragment() {
 
         viewModel.initLive()
 
+//        page9WorkOffice
+//        page9InTravel
+//        page9DayFoot
+//        page9InHouse
+
         with(binding) {
             page9WorkOffice.setOnClickListener {
                 viewModel.changepage9WorkOffice()
